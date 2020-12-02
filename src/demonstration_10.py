@@ -17,5 +17,14 @@ the maximum number is first.
 """
 def max_and_min(input_str):
     # Your code here
+    split = [str_digit for str_digit in input_str.split(" ")]
+
+    lil = min(split)
+    big = max(split)
+
+    return f'{big} {lil}'
 
 
+print(max_and_min("1 2 3 4 5"))
+print(max_and_min("1 2 -3 4 5"))
+print(max_and_min("1 9 3 4 -5"))

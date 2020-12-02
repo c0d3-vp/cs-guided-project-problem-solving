@@ -15,5 +15,16 @@ Examples:
 """
 def get_middle(input_str):
     # Your code here
+    midpoint = (len(input_str) - 1) // 2
+
+    if len(input_str) % 2  == 0:
+        return input_str[midpoint : midpoint + 2]
+
+    return input_str[midpoint]
+
+print(get_middle("test"))
+print(get_middle("testing"))
+print(get_middle("middle"))
+print(get_middle("A"))
 
 

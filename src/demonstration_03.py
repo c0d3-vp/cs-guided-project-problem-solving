@@ -13,7 +13,18 @@ Notes:
 - Bonus: Try to complete this challenge in one line!
 """
 
+import math
 
 def multiply_nums(nums):
     # Your code here
+    split = nums.split(", ")
+    ints = []
+
+    for digit in split:
+        ints.append(int(digit))
+
+    return math.prod(ints)
+
+print(multiply_nums("2, 3"))
+
 

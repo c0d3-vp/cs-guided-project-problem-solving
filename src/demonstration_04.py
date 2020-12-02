@@ -22,7 +22,30 @@ Notes:
 - Try to solve this without using conditional statements like if/else.
 """
 
-
 def emotify(txt):
     # Your code here
+    words = txt.split(" ")
+    last_word = words[-1]
+    # if last_word == "smile":
+       # words[-1] ==":D"
+    # if last_word == "grin":
+       # words[-1] == ":)"
+    # if last_word == "sad":
+       # words[-1] == ":("
+    # if last_word == "mad":
+       # words[-1] == ">:("'''
+    
+    associations = {
+        "smile": ":D",
+        "grin": ":)",
+        "sad": ":(",
+        "mad": ">:("
+    }
+    
+    words[-1] = associations[last_word]
+
+    return " ".join(words)
+
+print(emotify("make me mad"))
+
 
