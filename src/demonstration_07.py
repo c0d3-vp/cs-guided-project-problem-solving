@@ -14,4 +14,12 @@ Examples:
 """
 def repeat_it(input_str):
     # Your code here
+    result = []
+    for i, char in enumerate(input_str):
+        result.append(char.upper() + char * i)
 
+    return "-".join(result)
+
+    #return input_str.upper() + input_str * 3
+
+print(repeat_it("abcd"))
